@@ -9,9 +9,5 @@ public class person {
 		this .name = name ;
 		this.address = address;
 	}
-
-	public person(String string) {
-		// TODO Auto-generated constructor stub
-	}
 	
 }
