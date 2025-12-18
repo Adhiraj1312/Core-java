@@ -2,7 +2,6 @@ package filesIO;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -22,14 +21,13 @@ public class ReadAndWriteEmail {
 
 		while (email != null) {
 
-			if (email.endsWith("@gamil.com"))
-			{
-			System.out.println(email);
-			w.write(email);
-			w.newLine();
-		}
+			if (email.endsWith("@gmail.com")) {
+				System.out.println(email);
+				w.write(email);
+				w.newLine();
+			}
 
-		email = r.readLine();
+			email = r.readLine();
 		}
 		r.close();
 		w.close();
